@@ -2,23 +2,23 @@ var HtmlReporter = require('protractor-beautiful-reporter');
 
 exports.config = {
     framework: 'jasmine',
-    
+
 
     capabilities: {
-        'browserName': 'internet explorer'
+        'browserName': 'chrome'
     },
 
-	seleniumAddress: 'http://localhost:4444/wd/hub',
+	// seleniumAddress: 'http://localhost:4444/wd/hub',
 
     specs: ['screenshot_test.js'],
 
-	baseUrl: 'http://localhost:4200',
-  
+	baseUrl: 'https://www.npmjs.com/package/protractor-image-comparison',
+
     onPrepare: function() {
 
         jasmine.getEnv().addReporter(new HtmlReporter({
             baseDirectory: 'reports2/'
         }).getJasmine2Reporter());
     }
-	
+
 };

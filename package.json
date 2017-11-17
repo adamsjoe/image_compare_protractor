@@ -1,0 +1,25 @@
+{
+  "name": "image_compare_protractor",
+  "version": "0.1.0",
+  "description": "",
+  "main": "conf.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/protractor ./conf.js",
+    "postinstall": "./node_modules/.bin/webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamsjoe/image_compare_protractor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamsjoe/image_compare_protractor/issues"
+  },
+  "homepage": "https://github.com/adamsjoe/image_compare_protractor#readme",
+  "devDependencies": {
+    "protractor": "^5.2.0",
+    "protractor-beautiful-reporter": "^0.5.3",
+    "protractor-image-comparison": "^1.4.0"
+  }
+}
